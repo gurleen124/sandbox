@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-cloudImage{
+    background-image: url(./../images/clouds.png);
+    height: 120px;
+}
