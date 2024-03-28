@@ -5,7 +5,11 @@ module.exports = {
     "./index.html"
 ],
   theme: {
-    extend: {},
+    extend: {
+      listStyleImage: {
+        'tick': 'url("./assets/images/tick.svg")',
+      },
+    },
   },
   plugins: [],
 }

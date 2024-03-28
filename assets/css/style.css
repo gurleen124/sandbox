@@ -6,3 +6,7 @@
     background-image: url(./../images/clouds.png);
     height: 120px;
 }
+
+li.tick::marker{
+    list-style-image: url(./../images/tick.svg);
+}
