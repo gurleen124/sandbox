@@ -13,36 +13,180 @@
 
 <body>
     <!-- main -->
-    <main class="selection:bg-indigo-400 selection:text-white">
+    <main class="selection:bg-indigo-400 selection:text-white" id="main">
         <!-- header -->
         <header class="bg-indigo-50 py-5 sticky top-0 z-20">
             <nav class="container max-w-7xl mx-auto flex justify-between items-center text-lg">
                 <img src="./assets/images/sandbox-logo.png" alt="sandbox-logo">
-                <ul class="flex space-x-10 font-semibold">
-                    <div class="relative">
-                        <li class="flex items-end cursor-pointer hover:text-violet-600 demos"><span>Demos</span><img
-                                src="./assets/images/dropdownArrow.svg" alt="dropdownArrow"></li>
-                        <div class="absolute rounded-lg bg-white px-6 py-4 top-10 text-gray-600 space-y-1 demos hidden">
-                            <div class="hover:text-indigo-600 cursor-pointer">Services</div>
-                            <div class="hover:text-indigo-600 cursor-pointer">Services</div>
-                            <div class="hover:text-indigo-600 cursor-pointer">Services</div>
-                            <div class="hover:text-indigo-600 cursor-pointer">Services</div>
-                            <div class="hover:text-indigo-600 cursor-pointer">Services</div>
-                            <div class="hover:text-indigo-600 cursor-pointer">Services</div>
-                            <div class="hover:text-indigo-600 cursor-pointer">Services</div>
-                        </div>
+                <ul class="md:flex font-semibold md:space-x-5">
+                    <div class="relative" id="demo">
+                        <li class="flex items-end cursor-pointer hover:text-violet-600 menu"><span>Demos</span><img
+                                src="./assets/images/dropdownArrow.svg" alt="dropdownArrow">
+                            <ul
+                                class="absolute rounded-lg bg-white top-7 md:px-6 py-4 text-gray-600 space-y-1 demos hidden">
+                                <li class="hover:text-indigo-600 cursor-pointer">Services</li>
+                                <li class="hover:text-indigo-600 cursor-pointer">About</li>
+                                <li class="hover:text-indigo-600 cursor-pointer">Blog</li>
+                                <li class="hover:text-indigo-600 cursor-pointer">Contact</li>
+                                <li class="hover:text-indigo-600 cursor-pointer">Visit</li>
+                            </ul>
+                        </li>
                     </div>
-                    <li class="flex items-end cursor-pointer hover:text-violet-600"><span>Pages</span><img
-                            src="./assets/images/dropdownArrow.svg" alt="dropdownArrow"></li>
-                    <li class="flex items-end cursor-pointer hover:text-violet-600"><span>Projects</span><img
-                            src="./assets/images/dropdownArrow.svg" alt="dropdownArrow"></li>
-                    <li class="flex items-end cursor-pointer hover:text-violet-600"><span>Blog</span><img
-                            src="./assets/images/dropdownArrow.svg" alt="dropdownArrow"></li>
-                    <li class="flex items-end cursor-pointer hover:text-violet-600"><span>Blocks</span><img
-                            src="./assets/images/dropdownArrow.svg" alt="dropdownArrow"></li>
-                    <li class="flex items-end cursor-pointer hover:text-violet-600"><span>Documentation</span>
-                        <img src="./assets/images/dropdownArrow.svg" alt="dropdownArrow">
-                    </li>
+                    <div class="relative">
+                        <li class="flex items-end cursor-pointer hover:text-violet-600 menu"><span>Pages</span><img
+                                src="./assets/images/dropdownArrow.svg" alt="dropdownArrow">
+                            <ul class="absolute rounded-lg bg-white top-7 md:px-6 py-4 text-gray-600 space-y-1 hidden w-max">
+                                <li class="hover:text-indigo-600 cursor-pointer relative subMenu"><span
+                                        class="flex">Services<img src="./assets/images/dropend.svg" width="25px"
+                                            class="mt-1 md:ms-4 md:pe-2"></span>
+                                    <ul
+                                        class="absolute rounded-lg bg-white -top-1 -right-36 md:px-6 py-4 text-gray-600 space-y-1 hidden w-max">
+                                        <li class="hover:text-indigo-600 cursor-pointer">Service I</li>
+                                        <li class="hover:text-indigo-600 cursor-pointer">Service II</li>
+                                    </ul>
+                                </li>
+                                <li class="hover:text-indigo-600 cursor-pointer relative subMenu"><span
+                                        class="flex">About<img src="./assets/images/dropend.svg" width="25px"
+                                            class="mt-1 md:ms-8 md:pe-2"></span>
+                                    <ul
+                                        class="absolute rounded-lg bg-white -top-1 -right-36 md:px-6 py-4 text-gray-600 space-y-1 hidden w-max">
+                                        <li class="hover:text-indigo-600 cursor-pointer">About I</li>
+                                        <li class="hover:text-indigo-600 cursor-pointer">About II</li>
+                                    </ul>
+                                </li>
+                                <li class="hover:text-indigo-600 cursor-pointer relative subMenu"><span
+                                        class="flex">Shop<img src="./assets/images/dropend.svg" width="25px"
+                                            class="mt-1 md:ms-10 md:pe-2"></span>
+                                    <ul
+                                        class="absolute rounded-lg bg-white -top-1 -right-36 md:px-6 py-4 text-gray-600 space-y-1 hidden w-max">
+                                        <li class="hover:text-indigo-600 cursor-pointer">Shop I</li>
+                                        <li class="hover:text-indigo-600 cursor-pointer">Shop II</li>
+                                        <li class="hover:text-indigo-600 cursor-pointer">Shop III</li>
+                                        <li class="hover:text-indigo-600 cursor-pointer">Shop IV</li>
+                                    </ul>
+                                </li>
+                                <li class="hover:text-indigo-600 cursor-pointer relative subMenu"><span
+                                        class="flex">Contact<img src="./assets/images/dropend.svg" width="25px"
+                                            class="mt-1 md:ms-5 md:pe-2"></span>
+                                    <ul
+                                        class="absolute rounded-lg bg-white -top-1 -right-36 md:px-6 py-4 text-gray-600 w-max space-y-1 hidden">
+                                        <li class="hover:text-indigo-600 cursor-pointer">Location I</li>
+                                        <li class="hover:text-indigo-600 cursor-pointer">Location II</li>
+                                        <li class="hover:text-indigo-600 cursor-pointer">Location III</li>
+                                    </ul>
+                                </li>
+                                <li class="hover:text-indigo-600 cursor-pointer">Contact</li>
+                                <li class="hover:text-indigo-600 cursor-pointer">Career</li>
+                                <li class="hover:text-indigo-600 cursor-pointer">Utility</li>
+                                <li class="hover:text-indigo-600 cursor-pointer">Pricing</li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="relative">
+                        <li class="flex items-end cursor-pointer hover:text-violet-600 menu"><span>Projects</span><img
+                                src="./assets/images/dropdownArrow.svg" alt="dropdownArrow">
+                            <ul
+                                class="absolute rounded-lg bg-white top-7 md:px-6 py-4 text-gray-600 space-y-1 hidden w-max">
+                                <div class="grid grid-cols-2 divide-x">
+                                    <div>
+                                        <h6 class="text-indigo-600 uppercase text-sm">Project Pages</h6>
+                                        <ul class="text-base">
+                                            <li class="hover:text-indigo-600 cursor-pointer">Project I</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Project II</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Project III</li>
+                                        </ul>
+                                    </div>
+                                    <div class="md:ps-5">
+                                        <h6 class="text-indigo-600 uppercase text-sm">Single Projects</h6>
+                                        <ul class="text-base">
+                                            <li class="hover:text-indigo-600 cursor-pointer">Single Project I</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Single Project II</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Single Project III</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="relative">
+                        <li class="flex items-end cursor-pointer hover:text-violet-600 menu"><span>Blog</span><img
+                                src="./assets/images/dropdownArrow.svg" alt="dropdownArrow">
+                            <ul class="absolute rounded-lg bg-white top-7 md:px-6 py-4 text-gray-600 space-y-1 hidden w-max">
+                                <li class="hover:text-indigo-600 cursor-pointer">Blogs</li>
+                                <li class="hover:text-indigo-600 cursor-pointer">Articles</li>
+                                <li class="hover:text-indigo-600 cursor-pointer">Press Release</li>
+                                <li class="hover:text-indigo-600 cursor-pointer">Quick Notes</li>
+                                <li class="hover:text-indigo-600 cursor-pointer">FAQs</li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="relative">
+                        <li class="flex items-end cursor-pointer hover:text-violet-600 menu"><span>Blocks</span>
+                        </li>
+                    </div>
+                    <div class="relative">
+                        <li class="flex items-end cursor-pointer hover:text-violet-600 menu">
+                            <span>Documentation</span><img src="./assets/images/dropdownArrow.svg" alt="dropdownArrow">
+                            <ul
+                                class="absolute rounded-lg bg-white top-8 -right-72 md:px-6 py-4 text-gray-600 space-y-1 hidden w-max">
+                                <div class="grid grid-cols-3 md:space-x-5 divide-x">
+                                    <div class="col-span-1">
+                                        <h6 class="text-indigo-600 uppercase text-sm pt-5 pb-3">Usage</h6>
+                                        <ul class="columns-2 space-y-2 mb-7 md:gap-x-10">
+                                            <li class="hover:text-indigo-600 cursor-pointer">Get Started</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Forms</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">FAQ</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Changelog</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Credits</li>
+                                        </ul>
+                                        <h6 class="text-indigo-600 uppercase text-sm pt-5 pb-3">Styleguide</h6>
+                                        <ul class="columns-2 space-y-2 mb-7 md:gap-x-10">
+                                            <li class="hover:text-indigo-600 cursor-pointer">Colors</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Fonts</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">SVG Icons</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Font Icons</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Illustrations</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Backgrounds</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Misc</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-span-2 md:ps-10">
+                                        <h6 class="text-indigo-600 uppercase text-sm pt-5 pb-3">Elements</h6>
+                                        <ul class="columns-3 space-y-2 mb-7 md:gap-x-36">
+                                            <li class="hover:text-indigo-600 cursor-pointer">Accordion</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Alerts</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Animations</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Avatars</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Background</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Badges</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Buttons</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Card</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Carousel</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Dividers</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Form Elements</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Image Hover</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Image Mask</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Lightbox</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Media Player</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Modal</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Pagination</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Progressbar</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Shadows</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Shapes</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Tables</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Tabs</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Text Animations</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Text Highlight</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Tiles</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Tooltips & Popovers</li>
+                                            <li class="hover:text-indigo-600 cursor-pointer">Typography</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </li>
+                    </div>
                 </ul>
 
                 <button type="button"
@@ -51,6 +195,21 @@
             </nav>
         </header>
         <!-- /header -->
+        <!-- scroll to top button -->
+        <div>
+            <a type="button" href="#main" id="scrollButton"
+                class="hidden rounded-full p-4 w-12 border-2 border-indigo-800 fixed bottom-4 z-20 right-5 transition ease-in-out scroll-smooth duration-300 hover:bg-gray-100">
+                <svg viewBox="0 0 20 20" width="15px" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path stroke="rgb(55 48 163)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 18V2m0 0l7 7m-7-7L3 9"></path>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <!-- /scroll to top button -->
         <!-- hero section -->
         <section class="bg-indigo-50">
             <div class="max-w-7xl mx-auto md:flex">
@@ -58,7 +217,7 @@
                     <h1 class="text-5xl font-semibold text-balance leading-tight mb-5">Grow Your Business with <span
                             class="text-indigo-800">Our
                             Marketing Solutions</span></h1>
-                    <p class="text-2xl pe-40 leading-9 font-medium text-gray-500 mb-9">We help our clients to increase
+                    <p class="text-2xl md:pe-40 leading-9 font-medium text-gray-500 mb-9">We help our clients to increase
                         their website traffic, rankings and visibility
                         in search results.</p>
                     <div class="flex text-lg">
@@ -70,8 +229,8 @@
                             Now</button>
                     </div>
                 </div>
-                <div class="me-20 mt-12 z-10 relative">
-                    <img src="./assets/images/hero-image.png" alt="hero-image" class="">
+                <div class="md:me-20 mt-12 z-10 relative">
+                    <img src="./assets/images/hero-image.png" alt="hero-image">
                 </div>
             </div>
             <div
@@ -81,13 +240,13 @@
         <!-- /hero section -->
         <!-- services section -->
         <section class="bg-white relative xl:bottom-48 pt-28 lg:bottom-40 md:bottom-5">
-            <div class="max-w-7xl text-center mx-72 px-10">
+            <div class="text-center md:mx-72 md:px-10 mx-auto">
                 <h2 class="uppercase text-indigo-600 font-semibold text-base mb-4">What we do?</h2>
                 <h3 class="text-4xl font-semibold mb-11">The full service we are offering is specifically designed to
                     meet your business needs.</h3>
             </div>
-            <div class="flex text-center max-w-7xl mx-auto space-x-1">
-                <div class="px-5">
+            <div class="grid md:grid-cols-4 text-center max-w-7xl mx-auto md:space-x-1">
+                <div class="md:px-5">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="55px" viewBox="0 0 256.01 256"
                         data-inject-url="https://sandbox-tailwindcss.ibthemespro.com/assets/img/icons/solid/globe-2.svg">
                         <path class="fill-indigo-200"
@@ -107,8 +266,8 @@
                             more</span>
                         <img src="./assets/images/rightArrow.svg" alt="rightArrow"></a>
                 </div>
-                <div class="px-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="55px" viewBox="0 0 255.98 213.34"
+                <div class="md:px-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="55px" height="55px" viewBox="0 0 255.98 213.34"
                         data-inject-url="https://sandbox-tailwindcss.ibthemespro.com/assets/img/icons/solid/code.svg">
                         <path class="fill-indigo-200"
                             d="M104 213.34a11 11 0 01-2.59-.32 10.64 10.64 0 01-7.76-12.93l48-192a10.66 10.66 0 0120.68 5.17l-48 192a10.66 10.66 0 01-10.33 8.08z">
@@ -127,7 +286,7 @@
                             more</span>
                         <img src="./assets/images/rightArrow.svg" alt="rightArrow"></a>
                 </div>
-                <div class="px-5">
+                <div class="md:px-5">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="55px" viewBox="0 0 255.98 256"
                         data-inject-url="https://sandbox-tailwindcss.ibthemespro.com/assets/img/icons/solid/team.svg">
                         <circle class="fill-indigo-800" cx="128" cy="26.67" r="26.67"></circle>
@@ -149,7 +308,7 @@
                             class="text-indigo-800 font-semibold">Learn more</span>
                         <img src="./assets/images/rightArrow.svg" alt="rightArrow"></a>
                 </div>
-                <div class="px-5">
+                <div class="md:px-5">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="55px" viewBox="0 0 256 256"
                         data-inject-url="https://sandbox-tailwindcss.ibthemespro.com/assets/img/icons/solid/devices.svg">
                         <path class="fill-indigo-800"
@@ -175,15 +334,15 @@
         </section>
         <!-- /services section -->
         <!-- why choose us -->
-        <section class="max-w-7xl mx-auto flex flex-wrap items-center">
-            <div class="w-3/5 max-w-full pr-10">
+        <section class="container max-w-7xl mx-auto grid md:grid-cols-2 items-center mb-28 mt-28">
+            <div class="col-span-1">
                 <img src="./assets/images/time-management.png" alt="time-management">
             </div>
-            <div class="w-2/5 max-w-full">
-                <h2 class="uppercase text-indigo-600 font-semibold">Why Choose Us?</h2>
-                <h3 class="text-4xl font-semibold mb-11">So here a few reasons why our<br> valued customers choose us.
+            <div class="col-span-1 md:ps-32">
+                <h2 class="uppercase text-indigo-600 font-semibold mb-4 text-center md:text-start">Why Choose Us?</h2>
+                <h3 class="text-4xl font-semibold mb-10 text-center md:text-start">So here a few reasons why our<br> valued customers choose us.
                 </h3>
-                <div class="grid grid-cols-2">
+                <div class="grid md:grid-cols-2 gap-4">
                     <div class="flex">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50px" viewBox="0 0 256 256"
                             data-inject-url="https://sandbox-tailwindcss.ibthemespro.com/assets/img/icons/solid/lamp.svg"
@@ -198,8 +357,8 @@
                             <path class="fill-indigo-800" d="M160.53 208v.11a.93.93 0 00-.53-.11z"></path>
                         </svg>
                         <div class="mb-5">
-                            <h4 class="text-xl font-semibold">Creativity</h4>
-                            <p>Curabitur blandit lacus porttitor ridiculus mus.</p>
+                            <h4 class="text-xl font-semibold text-gray-600">Creativity</h4>
+                            <p class="text-gray-500 text-lg font-medium">Curabitur blandit lacus porttitor ridiculus mus.</p>
                         </div>
                     </div>
                     <div class="flex">
@@ -219,8 +378,8 @@
                             </path>
                         </svg>
                         <div>
-                            <h4 class="text-xl font-semibold">Innovative Thinking</h4>
-                            <p>Curabitur blandit lacus porttitor ridiculus mus.</p>
+                            <h4 class="text-xl font-semibold text-gray-600">Innovative Thinking</h4>
+                            <p class="text-gray-500 text-lg font-medium">Curabitur blandit lacus porttitor ridiculus mus.</p>
                         </div>
                     </div>
                     <div class="flex">
@@ -235,8 +394,8 @@
                             </path>
                         </svg>
                         <div>
-                            <h4 class="text-xl font-semibold">Rapid Solutions</h4>
-                            <p>Curabitur blandit lacus porttitor ridiculus mus.</p>
+                            <h4 class="text-xl font-semibold text-gray-600">Rapid Solutions</h4>
+                            <p class="text-gray-500 text-lg font-medium">Curabitur blandit lacus porttitor ridiculus mus.</p>
                         </div>
                     </div>
                     <div class="flex">
@@ -254,8 +413,8 @@
                             </path>
                         </svg>
                         <div>
-                            <h4 class="text-xl font-semibold">Top-Notch Support</h4>
-                            <p>Curabitur blandit lacus porttitor ridiculus mus.</p>
+                            <h4 class="text-xl font-semibold text-gray-600">Top-Notch Support</h4>
+                            <p class="text-gray-500 text-lg font-medium">Curabitur blandit lacus porttitor ridiculus mus.</p>
                         </div>
                     </div>
                 </div>
@@ -263,17 +422,17 @@
         </section>
         <!-- /why choose us -->
         <!-- our solutions -->
-        <section class="grid grid-cols-2 items-center max-w-7xl mx-auto">
-            <div class="me-16">
-                <h2 class="uppercase text-indigo-600 font-semibold">Our Solutions</h2>
-                <h3 class="text-4xl font-semibold mb-8">Just sit & relax while we take care of your business needs.</h3>
+        <section class="grid md:grid-cols-2 items-center max-w-7xl mx-auto">
+            <div class="md:me-16">
+                <h2 class="uppercase text-indigo-600 font-semibold text-center md:text-start">Our Solutions</h2>
+                <h3 class="text-4xl font-semibold mb-8 text-gray-600">Just sit & relax while we take care of your business needs.</h3>
                 <p class="text-lg font-medium text-gray-500 mb-8">Cum sociis natoque penatibus et magnis dis parturient
                     montes, nascetur ridiculus mus. Cras justo
                     odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus. Maecenas sed diam eget
                     risus varius blandit sit amet non magna. Praesent commodo cursus magna.</p>
-                <div class="flex gap-32">
+                <div class="flex gap-32 justify-center md:justify-start">
                     <div>
-                        <p class="text-5xl font-semibold mb-1">99.7%</p>
+                        <p class="text-5xl font-semibold mb-1 text-gray-800">99.7%</p>
                         <p class="text-lg font-medium mb-1">Customer Satisfaction</p>
                         <div class="flex">
                             <img src="./assets/images/starRating.svg" alt="starRating" width="20px">
@@ -284,7 +443,7 @@
                         </div>
                     </div>
                     <div>
-                        <p class="text-5xl font-semibold mb-1">4x</p>
+                        <p class="text-5xl font-semibold mb-1 text-gray-800">4x</p>
                         <p class="text-lg font-medium mb-1">New Visitors</p>
                         <div class="flex">
                             <img src="./assets/images/starRating.svg" alt="starRating" width="20px">
@@ -296,7 +455,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mx-16">
+            <div class="md:mx-16 mt-10">
                 <img src="./assets/images/discussion.png" alt="discussion">
             </div>
         </section>
@@ -304,20 +463,20 @@
         <!-- happy customers -->
         <section class="max-w-7xl mx-auto container items-center my-32">
             <div class="bg-indigo-50 rounded-2xl pb-20">
-                <div class="text-center pt-20">
+                <div class="text-center pt-20 md:mx-72">
                     <h2 class="uppercase text-indigo-800 text-lg font-semibold mb-4">Happy customers</h2>
-                    <h3 class="text-4xl font-semibold mb-10">Don't take our word for it. See what<br> customers are
+                    <h3 class="text-4xl font-semibold mb-14">Don't take our word for it. See what customers are
                         saying about
                         us.
                     </h3>
                 </div>
-                <div class="grid grid-cols-2 justify-center">
-                    <div class="col-span-1 flex justify-center ms-32">
+                <div class="grid md:grid-cols-2 justify-center">
+                    <div class="col-span-1 flex justify-center md:ms-32">
                         <img src="./assets/images/happyCustomer.jpg" alt="happyCustomer" class="rounded-full">
                     </div>
-                    <div class="col-span-1 flex justify-start me-36">
-                        <div>
-                            <div class="flex mb-4">
+                    <div class="col-span-1 flex justify-start md:me-36">
+                        <div class="text-center md:text-start">
+                            <div class="flex mb-5 mt-8 justify-center md:justify-start">
                                 <img src="./assets/images/starRating.svg" alt="starRating" width="20px">
                                 <img src="./assets/images/starRating.svg" alt="starRating" width="20px">
                                 <img src="./assets/images/starRating.svg" alt="starRating" width="20px">
@@ -371,19 +530,19 @@
         <!-- /happy customers -->
         <!-- pricing -->
         <section class="max-w-7xl mx-auto container">
-            <div class="flex justify-end text-lg font-medium text-gray-500 items-center mb-8">
-                <span class="pe-3">Monthly</span>
+            <div class="flex justify-end text-lg font-medium text-gray-500 items-center mb-20">
+                <span class="md:pe-3">Monthly</span>
                 <label for="check" class="bg-gray-200 cursor-pointer relative w-12 h-6 rounded-full flex">
                     <input type="checkbox" id="check" class="sr-only peer">
                     <span
                         class="w-2/5 h-4/5 bg-indigo-800 absolute rounded-full left-1 top-0.5 peer-checked:left-6 transition-all duration-500">
                     </span>
                 </label>
-                <span class="ps-3">Yearly</span>
-                <span class="text-red-600 ps-1">(Save 30%)</span>
+                <span class="md:ps-3">Yearly</span>
+                <span class="text-red-600 md:ps-1">(Save 30%)</span>
             </div>
-            <div class="grid grid-cols-3 space-x-10">
-                <div>
+            <div class="grid md:grid-cols-3 md:space-x-10">
+                <div class="text-center md:text-start">
                     <h2 class="uppercase text-indigo-800 text-lg font-semibold mb-4">Our Pricing</h2>
                     <h3 class="text-4xl font-semibold mb-5">We offer great and premium prices.</h3>
                     <p class="text-lg font-medium text-gray-500 mb-8">Enjoy a <a href="#"
@@ -393,45 +552,226 @@
                         class="bg-indigo-800 text-white font-semibold py-2 px-5 rounded-lg border-indigo-800 border transition ease-in-out hover:-translate-y-1 hover:drop-shadow-lg">See
                         All Prices</button>
                 </div>
-                <div class="rounded-lg border-t-8 border-indigo-200 shadow-xl text-center py-16 px-10">
-                    <h3 class="text-gray-700"><sup class="text-xl">$</sup><span
-                            class="text-5xl font-semibold">19</span><sub class="text-lg">/mo</sub></h3>
-                    <h3 class="text-gray-700 hidden"><sup class="text-xl">$</sup><span
-                            class="text-5xl font-semibold">199</span><sub class="text-lg">/yr</sub></h3>
-                    <h4 class="my-3 text-xl font-semibold text-gray-600">Premium Plan</h4>
-                    <ul class="my-7 text-lg text-start ps-28 list-image-tick marker:text-xl marker:text-indigo-700 text-gray-600"
-                        role="list">
-                        <li><b>5</b> Projects</li>
-                        <li><b>100K</b> API Access</li>
-                        <li><b>200MB</b> Storage</li>
-                        <li>Weekly <b>Reports</b></li>
-                        <li>24/7 <b>Support</b></li>
-                    </ul>
-                    <button type="button"
-                        class="bg-indigo-800 text-white font-semibold py-2 px-5 rounded-lg border-indigo-800 border transition ease-in-out hover:-translate-y-1 hover:drop-shadow-lg">Choose
-                        Plan</button>
+                <div class="md:mb-40 flex justify-center mt-5 md:mt-0 mb-16">
+                    <div class="rounded-lg border-t-8 border-indigo-200 shadow-xl text-center md:py-14 md:px-10 px-20 py-6 w-max">
+                        <h3 class="text-gray-700 month"><sup class="text-xl">$</sup><span
+                                class="text-5xl font-semibold">19</span><sub class="text-lg">/mo</sub></h3>
+                        <h3 class="text-gray-700 hidden year"><sup class="text-xl">$</sup><span
+                                class="text-5xl font-semibold">199</span><sub class="text-lg">/yr</sub></h3>
+                        <h4 class="my-3 text-xl font-semibold text-gray-600">Premium Plan</h4>
+                        <ul style="list-style-image:unset;"
+                            class="my-7 text-lg text-start md:ps-28 list-image-[url(./assets/images/tick.svg)] marker:text-xl marker:text-indigo-700 text-gray-600"
+                            role="list">
+                            <li><b>5</b> Projects</li>
+                            <li><b>100K</b> API Access</li>
+                            <li><b>200MB</b> Storage</li>
+                            <li>Weekly <b>Reports</b></li>
+                            <li>24/7 <b>Support</b></li>
+                        </ul>
+                        <button type="button"
+                            class="bg-indigo-800 text-white font-semibold py-2 px-5 rounded-lg border-indigo-800 border transition ease-in-out hover:-translate-y-1 hover:drop-shadow-lg">Choose
+                            Plan</button>
+                    </div>
                 </div>
-                <div class="rounded-lg border-t-8 border-indigo-200 shadow-xl text-center py-16 px-10">
-                    <h3 class="text-gray-700"><sup class="text-xl">$</sup><span
-                            class="text-5xl font-semibold">49</span><sub class="text-lg">/mo</sub></h3>
-                    <h3 class="text-gray-700 hidden"><sup class="text-xl">$</sup><span
-                            class="text-5xl font-semibold">499</span><sub class="text-lg">/yr</sub></h3>
-                    <h4 class="my-3 text-xl font-semibold text-gray-600">Corporate Plan</h4>
-                    <ul class="list-disc list-image-tick my-7 text-lg text-start ps-28 marker:text-xl marker:text-indigo-700 text-gray-600"
-                        role="list">
-                        <li><b>20</b> Projects</li>
-                        <li><b>300K</b> API Access</li>
-                        <li><b>500MB</b> Storage</li>
-                        <li>Weekly <b>Reports</b></li>
-                        <li>24/7 <b>Support</b></li>
-                    </ul>
-                    <button type="button"
-                        class="bg-indigo-800 text-white font-semibold py-2 px-5 rounded-lg border-indigo-800 border transition ease-in-out hover:-translate-y-1 hover:drop-shadow-lg">Choose
-                        Plan</button>
+                <div class="-mt-10 flex justify-center md:mt-0">
+                    <div class="rounded-lg border-t-8 border-indigo-200 shadow-xl text-center md:px-10 md:py-24 px-20 py-6 w-max">
+                        <h3 class="text-gray-700 month"><sup class="text-xl">$</sup><span
+                                class="text-5xl font-semibold">49</span><sub class="text-lg">/mo</sub></h3>
+                        <h3 class="text-gray-700 hidden year"><sup class="text-xl">$</sup><span
+                                class="text-5xl font-semibold">499</span><sub class="text-lg">/yr</sub></h3>
+                        <h4 class="my-3 text-xl font-semibold text-gray-600">Corporate Plan</h4>
+                        <ul class="my-7 text-lg text-start md:ps-28 marker:text-xl marker:text-indigo-700 text-gray-600"
+                            role="list">
+                            <li><b>20</b> Projects</li>
+                            <li><b>300K</b> API Access</li>
+                            <li><b>500MB</b> Storage</li>
+                            <li>Weekly <b>Reports</b></li>
+                            <li>24/7 <b>Support</b></li>
+                        </ul>
+                        <button type="button"
+                            class="bg-indigo-800 text-white font-semibold py-2 px-5 rounded-lg border-indigo-800 border transition ease-in-out hover:-translate-y-1 hover:drop-shadow-lg">Choose
+                            Plan</button>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- /pricing -->
+        <!-- lets talk section -->
+        <section class="max-w-7xl mx-auto container mt-20">
+            <div class="grid md:grid-cols-2">
+                <div>
+                    <img src="./assets/images/talk.png" alt="talk">
+                </div>
+                <div class="md:ms-32 text-center md:text-start mt-16">
+                    <h2 class="uppercase text-indigo-800 text-lg font-semibold mb-4">
+                        Let's Talk
+                    </h2>
+                    <h3 class="text-4xl font-semibold mb-5">Let's make something great together. We are trusted by over
+                        5000+ clients.
+                    </h3>
+                    <p class="text-lg font-medium text-gray-500 mb-8">Aenean eu leo quam. Pellentesque ornare sem
+                        lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac
+                        cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    </p>
+                    <button type="button"
+                        class="bg-indigo-800 text-white font-semibold py-2 px-5 rounded-lg border-indigo-800 border transition ease-in-out hover:-translate-y-1 hover:drop-shadow-lg">Join
+                        Us</button>
+                </div>
+            </div>
+        </section>
+        <!-- /lets talk section -->
+        <!-- analyze section -->
+        <section class="bg-indigo-50">
+            <div class="max-w-7xl mx-auto container text-center pt-28 mt-32">
+                <h2 class="uppercase text-indigo-800 text-lg font-semibold mb-4">Analyze Now</h2>
+                <h3 class="text-4xl font-semibold mb-10 md:mx-52">Wonder how much faster your website can go? Easily check
+                    your SEO Score now.</h3>
+                <div class="mb-20"><input type="url" class="py-3 ps-5 pe-11 rounded-s-lg border-white border-2 w-1/3"
+                        name="website" id="website" placeholder="Enter Website URL">
+                    <button type="button"
+                        class="bg-indigo-800 text-white font-semibold py-3 px-6 rounded-lg rounded-s-none -ms-1 border-indigo-800 border hover:drop-shadow-lg"><span>Analyze</span></button>
+                </div>
+            </div>
+            <div class="bg-cloudImage bg-contain relative bg-repeat-x -bottom-24 md:-bottom-10">
+            </div>
+        </section>
+        <!-- /analyze section -->
+        <!-- footer section -->
+        <footer class="mt-24 max-w-7xl mx-auto container">
+            <div class="grid grid-cols-2 md:space-x-10">
+                <div class="col-span-1 w-3/4">
+                    <img src="./assets/images/sandbox-logo.png" alt="sandbox-logo" class="mb-5">
+                    <p class="text-xl font-medium text-gray-500 leading-8">We are trusted by over 5000+ clients. Join
+                        them by using our services and grow your business.</p>
+                </div>
+                <div class="grid grid-cols-2 col-span-1">
+                    <div class="col-span-1">
+                        <div class="flex items-start md:space-x-6">
+                            <svg viewBox="0 0 24 24" width="25px" class="mt-1" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M14.05 6C15.0268 6.19057 15.9244 6.66826 16.6281 7.37194C17.3318 8.07561 17.8095 8.97326 18 9.95M14.05 2C16.0793 2.22544 17.9716 3.13417 19.4163 4.57701C20.8609 6.01984 21.7721 7.91101 22 9.94M18.5 21C9.93959 21 3 14.0604 3 5.5C3 5.11378 3.01413 4.73086 3.04189 4.35173C3.07375 3.91662 3.08968 3.69907 3.2037 3.50103C3.29814 3.33701 3.4655 3.18146 3.63598 3.09925C3.84181 3 4.08188 3 4.56201 3H7.37932C7.78308 3 7.98496 3 8.15802 3.06645C8.31089 3.12515 8.44701 3.22049 8.55442 3.3441C8.67601 3.48403 8.745 3.67376 8.88299 4.05321L10.0491 7.26005C10.2096 7.70153 10.2899 7.92227 10.2763 8.1317C10.2643 8.31637 10.2012 8.49408 10.0942 8.64506C9.97286 8.81628 9.77145 8.93713 9.36863 9.17882L8 10C9.2019 12.6489 11.3501 14.7999 14 16L14.8212 14.6314C15.0629 14.2285 15.1837 14.0271 15.3549 13.9058C15.5059 13.7988 15.6836 13.7357 15.8683 13.7237C16.0777 13.7101 16.2985 13.7904 16.74 13.9509L19.9468 15.117C20.3262 15.255 20.516 15.324 20.6559 15.4456C20.7795 15.553 20.8749 15.6891 20.9335 15.842C21 16.015 21 16.2169 21 16.6207V19.438C21 19.9181 21 20.1582 20.9007 20.364C20.8185 20.5345 20.663 20.7019 20.499 20.7963C20.3009 20.9103 20.0834 20.9262 19.6483 20.9581C19.2691 20.9859 18.8862 21 18.5 21Z"
+                                        stroke="rgb(79 70 229)" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </g>
+                            </svg>
+                            <div class="mb-5">
+                                <h4 class="text-xl font-semibold mb-1 text-gray-700">Phone</h4>
+                                <p class="text-lg font-medium text-gray-500 leading-7">00 (123) 456 78 90 <br>00 (987)
+                                    654 32 10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-1">
+                        <div class="flex items-start md:space-x-6">
+                            <svg fill="#000000" width="40px" class="mt-1" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path class="fill-indigo-600"
+                                        d="M12,10.8a2,2,0,1,0-2-2A2,2,0,0,0,12,10.8Zm-.71,6.91a1,1,0,0,0,1.42,0l4.09-4.1a6.79,6.79,0,1,0-9.6,0ZM7.23,8.34A4.81,4.81,0,0,1,9.36,4.79a4.81,4.81,0,0,1,5.28,0,4.82,4.82,0,0,1,.75,7.41L12,15.59,8.61,12.2A4.77,4.77,0,0,1,7.23,8.34ZM19,20H5a1,1,0,0,0,0,2H19a1,1,0,0,0,0-2Z">
+                                    </path>
+                                </g>
+                            </svg>
+                            <div class="mb-5">
+                                <h4 class="text-xl font-semibold mb-1 text-gray-700">Address</h4>
+                                <p class="text-lg font-medium text-gray-500 leading-7">Moonshine St. 14/05 Light City,
+                                    London, United Kingdom</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-24 mb-9">
+            <div class="grid grid-cols-2 justify-between pb-9">
+                <div class="col-span-1 text-gray-500 text-lg font-medium">© 2024 Sandbox. All rights reserved.</div>
+                <div class="col-span-1 flex md:space-x-4 justify-end">
+                    <svg viewBox="0 -2 20 20" width="18px" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <title>twitter [#154]</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs> </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)"
+                                    fill="#000000">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path class="fill-gray-700"
+                                            d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+                                            id="twitter-[#154]"> </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <svg fill="#000000" width="18px" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g id="7935ec95c421cee6d86eb22ecd11b7e3">
+                                <path style="display: inline;" class="fill-gray-700"
+                                    d="M283.122,122.174c0,5.24,0,22.319,0,46.583h83.424l-9.045,74.367h-74.379 c0,114.688,0,268.375,0,268.375h-98.726c0,0,0-151.653,0-268.375h-51.443v-74.367h51.443c0-29.492,0-50.463,0-56.302 c0-27.82-2.096-41.02,9.725-62.578C205.948,28.32,239.308-0.174,297.007,0.512c57.713,0.711,82.04,6.263,82.04,6.263 l-12.501,79.257c0,0-36.853-9.731-54.942-6.263C293.539,83.238,283.122,94.366,283.122,122.174z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                    <svg fill="#000000" width="18px" viewBox="0 0 32 32" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <title>dribble</title>
+                            <path class="fill-gray-700"
+                                d="M25.916 7.921c-1.881 2.234-4.289 3.965-7.035 5.009l-0.118 0.039c0.3 0.612 0.587 1.231 0.85 1.857 0.1 0.225 0.187 0.45 0.275 0.662 0.927-0.102 2.003-0.16 3.092-0.16 2.063 0 4.077 0.208 6.023 0.605l-0.193-0.033c-0.020-3.040-1.107-5.821-2.904-7.994l0.017 0.021zM13.001 3.569c1.595 2.15 3.176 4.6 4.598 7.151l0.178 0.347c2.712-0.908 4.989-2.511 6.694-4.6l0.021-0.026c-2.247-2.006-5.228-3.232-8.494-3.232-1.063 0-2.096 0.13-3.084 0.375l0.088-0.018zM3.46 13.395c4.219-0.022 8.295-0.59 12.176-1.636l-0.333 0.076c-1.652-2.899-3.222-5.318-4.912-7.644l0.163 0.236c-3.596 1.721-6.227 4.966-7.077 8.875l-0.015 0.085zM6.484 24.585c2.42-3.882 6.010-6.839 10.271-8.408l0.141-0.045c0.169-0.056 0.337-0.105 0.506-0.15-0.325-0.731-0.675-1.458-1.040-2.174-3.888 1.154-8.355 1.819-12.977 1.819-0.066 0-0.131-0-0.196-0l0.010 0-0.005 0.39c0 0.003 0 0.006 0 0.009 0 3.297 1.25 6.302 3.301 8.568l-0.010-0.011zM21.005 27.809c-0.682-3.699-1.63-6.957-2.863-10.070l0.126 0.361-0.082 0.025c-4.314 1.346-7.826 4.192-10.002 7.915l-0.045 0.083c2.145 1.688 4.885 2.707 7.863 2.707 1.805 0 3.522-0.374 5.078-1.049l-0.083 0.032zM28.646 18.052c-1.571-0.474-3.376-0.747-5.245-0.747-0.964 0-1.911 0.073-2.836 0.213l0.104-0.013c0.98 2.564 1.842 5.629 2.436 8.789l0.054 0.344c2.874-1.96 4.893-4.993 5.482-8.51l0.010-0.075zM16 30.996c0 0 0 0-0 0-8.282 0-14.996-6.714-14.996-14.996s6.714-14.996 14.996-14.996c8.282 0 14.996 6.714 14.996 14.996 0 0 0 0 0 0v0c-0.011 8.277-6.718 14.984-14.995 14.996h-0.001z">
+                            </path>
+                        </g>
+                    </svg>
+                    <svg viewBox="0 0 24 24" width="18px" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                fill="#0F0F0F"></path>
+                            <path class="fill-gray-700"
+                                d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                                fill="#0F0F0F"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                                fill="#0F0F0F"></path>
+                        </g>
+                    </svg>
+                    <svg viewBox="0 -3 20 20" width="18px" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <title>youtube [#168]</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs> </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)"
+                                    fill="#000000">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path class="fill-gray-700"
+                                            d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289"
+                                            id="youtube-[#168]"> </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer section -->
     </main>
     <!-- main -->
     <!-- jquery file -->
